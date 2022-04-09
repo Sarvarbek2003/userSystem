@@ -1,8 +1,11 @@
 # userSystem
 
 path '/' => users (object) Metoth GET
+
 path '/send' => user send file (formdata) Metoth POST content type formdata  object = { file, from_userid, to_userid, caption }
+
 path '/register' =>  user regiser (object) Metoth POST content type application/json = object = { username, password }
+
 path '/auth' =>  user regiser (object) Metoth POST content type application/json = object = { username, password }
 
 WEBSOCKET
